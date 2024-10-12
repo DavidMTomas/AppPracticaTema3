@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity"
+    android:layout_marginHorizontal="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+   <TextView
+       android:id="@+id/usuario"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:text="usuario"
+       android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="direccion"
+            android:layout_marginVertical="20dp"/>
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="tiempo"
+            android:layout_marginVertical="20dp"/>
+
+
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="hora"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/opcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="opcion1"
+            android:layout_marginVertical="20dp"/>
+        <TextView
+            android:id="@+id/opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="opcion2"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="texto"
+            android:layout_marginVertical="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

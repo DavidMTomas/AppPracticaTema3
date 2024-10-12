@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                app:endIconMode="clear_text"
+                app:helperText="Obligatorio"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtfUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Introduce le usuario"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                app:endIconMode="clear_text"
+                app:helperText="Obligatorio"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtfDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Direccion"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rdgTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Elegir tiempo" />
+
+                <RadioButton
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/rbManyana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Mañana" />
+                <RadioButton
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/rbTarde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarde" />
+                <RadioButton
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/rbNoche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="noche" />
+            </RadioGroup>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+            <Spinner
+                android:id="@+id/spnHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/horario"/>
+
+
+            <CheckBox
+                android:layout_marginTop="30dp"
+                android:id="@+id/cbOpcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 1"/>
+            <CheckBox
+                android:layout_marginTop="30dp"
+                android:id="@+id/cbOpcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opcion 2"/>
+
+
+            <EditText
+                android:id="@+id/textoExtenso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtstring" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flbotonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/btBar"
+        android:contentDescription="add task"
+        android:src="@color/design_default_color_on_secondary"
+        />
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/btBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        app:fabAlignmentMode="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:contextClickable="false"
+        app:backgroundTint="#E84545"
+        app:navigationIcon="@android:drawable/alert_dark_frame" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
